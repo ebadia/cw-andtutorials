@@ -1,0 +1,32 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="1"
+	>
+	<TableRow>
+		<TextView android:text="User Name:" />
+		<EditText android:id="@+id/user" />
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Password:" />
+		<EditText android:id="@+id/password"
+			android:password="true"
+		/>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Status:" />
+		<EditText android:id="@+id/status"
+			android:singleLine="false"
+			android:gravity="top"
+			android:lines="5"
+			android:scrollHorizontally="false"
+			android:maxLines="5"
+			android:maxWidth="200sp"
+		/>
+	</TableRow>
+	<Button android:id="@+id/send"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Send"
+	/>
+</TableLayout>

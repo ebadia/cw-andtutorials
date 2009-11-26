@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+			package="apt.tutorial.three"
+			android:versionCode="1"
+			android:versionName="1.0">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="@string/app_name">
+		<service android:name=".TwitterMonitor">
+			<intent-filter>
+				<action android:name="apt.tutorial.ITwitterMonitor" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>

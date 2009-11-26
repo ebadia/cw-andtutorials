@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/prefs"
+		android:title="Settings"
+		android:icon="@android:drawable/ic_menu_preferences"
+	/>
+	<item android:id="@+id/status_entry"
+		android:title="Hide Status Entry"
+		android:icon="@drawable/status_hide"
+	/>
+	<item android:id="@+id/bff"
+		android:title="Set Best Friends"
+		android:icon="@drawable/friends"
+	/>
+	<item android:id="@+id/location"
+		android:title="Insert Location"
+		android:icon="@android:drawable/ic_menu_compass"
+	/>
+	<item android:id="@+id/help"
+		android:title="Help"
+		android:icon="@android:drawable/ic_menu_help"
+	/>
+</menu>
