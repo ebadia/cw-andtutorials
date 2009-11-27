@@ -17,19 +17,10 @@ class RestaurantSQLiteHelper extends SQLiteOpenHelper {
 	
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		Cursor c=db.rawQuery("SELECT name FROM sqlite_master WHERE type='table' AND name='restaurants'", null);
-		
-		try {
-			if (c.getCount()==0) {
-				db.execSQL("CREATE TABLE restaurants "+
-									 "(_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
-									 "name TEXT, address TEXT, type TEXT,"+
-									 "notes TEXT, phoneNumber TEXT);");
-			}
-		}
-		finally {
-			c.close();
-		}
+		db.execSQL("CREATE TABLE restaurants "+
+							 "(_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
+							 "name TEXT, address TEXT, type TEXT,"+
+							 "notes TEXT, phoneNumber TEXT);");
 	}
 
 	@Override
